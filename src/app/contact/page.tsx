@@ -1,17 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Label } from "../components/ui/label";
 import { Input } from "../components/ui/input";
 import { cn } from "@/utils/cn";
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
+
 import msg_icon from "../../../public/assets/msg-icon.png";
 import Image from "next/image";
 
-export default function contactPage() {
+export default function ContactPage() {
   const [result, setResult] = useState("");
   async function handleSubmit(e: any) {
     e.preventDefault();
